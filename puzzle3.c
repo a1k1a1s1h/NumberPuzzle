@@ -53,8 +53,9 @@ int main(){
 	getchar();
 	getchar();
 	system("clear");
-	textDisplay("Tip => Undo completely before you use the solution for the puzzle!");
-	textDisplay("Tip => Use W,A,S,D to move the Empty space!");
+	textDisplay("Tip 1 => Undo completely before you use the solution for the puzzle!");
+	textDisplay("Tip 2 => Generated solution may not be an efficient solution!");
+	textDisplay("Tip 3 => Use W,A,S,D to move the Empty space!");
 	loadAnimation();
 	usleep(999999);
 	int solutionDisplayFlag = 0;
