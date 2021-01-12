@@ -55,7 +55,7 @@ int main(){
 	system("clear");
 	textDisplay("Tip => Use W A S D keys to move the empty space!");
 	loadAnimation();
-	usleep(1000000);
+	usleep(999999);
 	int solutionDisplayFlag = 0;
 	while(1){
 		system("clear");
@@ -63,7 +63,7 @@ int main(){
 		if(solutionDisplayFlag){
 			solutionDisplay();
 		}
-		printf("\nWaiting for your move.....\n\n[press q to quit]\t[h for solution]\t[z for undo]\n");
+		printf("\nWaiting for your move.....[W-up][A-left][S-Down][D-Right]\n\n[press q to quit]\t[h for solution]\t[z for undo]\n");
 		int toDo = getKeyPress();
 		if(toDo == 0){
 			continue;
@@ -116,12 +116,12 @@ int main(){
 
 
 void loadAnimation(){
-	char* wish = "....";
-    int length = strlen(wish);
+	char* dots = "....";
+    int length = strlen(dots);
     printf("\n");
     for(int i=0;i<=length;i++){
     	for(int j=0;j<i;j++){
-    		printf("%c",wish[j]);
+    		printf("%c",dots[j]);
     		fflush(stdout);
     		usleep(190000);
     	}
