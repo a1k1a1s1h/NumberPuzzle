@@ -117,7 +117,7 @@ int main(){
 
 
 void loadAnimation(){
-	char* dots = "....";
+	char* dots = ".......";
     int length = strlen(dots);
     printf("\n");
     for(int i=0;i<=length;i++){
